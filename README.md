@@ -23,8 +23,7 @@ Npm commands to install Node.js;
 
 >We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
 The installation of this package is very simple, just use the code bellow on your terminal.
-**PRINT OF THE CODE**
-  Package installation.
+**PRINT DA IMAGEM**
 
 >After installation is completed, you already can use Axios on your project, we are going to create an application that consumes the Swagger Petstore sample API, and displays pet information data on the screen.
 
