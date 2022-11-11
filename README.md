@@ -1,12 +1,14 @@
+# Br Petshop API User Guide
+
 ## Introduction
-**nomedaminhaAPI** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
-This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
+>**Br Petshop** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
+>This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
 ## System Overview
-This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
+>This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
 ## React Axios
-Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes HTTP requisitions to the Swagger Petstore sample API using Axios.
-### Characteristics
--Using ‘Ajax’ as a layer bellow, makes requisitions through the browser via XMLHttpRequests;
+>Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes HTTP requisitions to the Swagger Petstore sample API using Axios.
+## Characteristics
+- Using ‘Ajax’ as a layer bellow, makes requisitions through the browser via XMLHttpRequests;
 -	Makes HTTP requisition with Node.js;
 -	Supports Promises;
 -	Every answer will be transformed and returned in JSON;
@@ -19,57 +21,48 @@ Npm commands to install Node.js;
 2.	Type npm install –save <module-name> then press Enter.
 3.	Run the JavaScript files with node <filename> on your terminal or command line to see example output.
 
-We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
+>We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
 The installation of this package is very simple, just use the code bellow on your terminal.
- 
- Package installation.
-After the installation is completed, you already can use Axios on your project, we are going to create an application that consumes the Swagger Petstore sample API, and displays pet information data on the screen.
+**PRINT OF THE CODE**
+  Package installation.
+
+>After installation is completed, you already can use Axios on your project, we are going to create an application that consumes the Swagger Petstore sample API, and displays pet information data on the screen.
 
 
-Creating the file
-To better organize your project, create a file <nameexample.js>, which will be responsible for all the configuration and the Axios library import.
+## Creating the file
+>To better organize your project, create a file <nameexample.js>, which will be responsible for all the configuration and the Axios library import.
 The page structure should look like this.
  
-Image. Page’s structure.
-The Api.js code can be seen in code 3.
-(print)
-Code 3. File api.js.
+**Image. Page’s structure.**
 
 
-
-
-
-
-
-
-
-
-Get requisiton
-With this example, we are going to make a requisition using HTTP GET through the get() method. 
+## Get requisiton
+>With this example, we are going to make a requisition using HTTP GET through the get() method. 
 <Line 9> is returning the Pet id and Pet name data from Swagger Petstore.
  
-Code 5. Requisiton call.
-Code explanation:
- (image code)
+**Code 5. Requisiton call.
+## Code explanation:
+**PRINT**
 
-
-Code execution.
+>Code execution.
  
 
-(execucao do codigo)
+**(PRINT execucao do codigo)**
 
-Requisition with POST
-The post() method makes requisition utilizing HTTP POST, as per Code6.
-(print)
-Code 5. Requisition with post
+## Requisition with POST
+>The post() method makes requisition utilizing HTTP POST, as per Code6.
+**(print)
+Code 5. Requisition with post**
 Here you can see on the third line, beyond the endpoint the second parameter is being passed to the post() method, which is an data object that are being sent to the API.
 The difference between the get() method and post() method is;
 The parameters will be sent through the HTTP request header, and in post() the parameters are sent through the body request.
 The most common methods for HTTP request are: GET, POST, DELETE and PUT. For each method Axios has its own ‘method’ with the same name, as we see in code 7.
-(print)
+**(print)**
 
 
 Code 5. Requisition examples.
-Conclusion
+
+
+## Conclusion
 
 
