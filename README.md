@@ -16,7 +16,7 @@
 ## Prerequisites
 -	Noje.js running on your machine
 ## Installation and configuration
-Npm commands to install Node.js;
+**Npm commands to install Node.js;**
 1.	Type npm nit on your terminal or cmd(command prompt) then press Enter.
 2.	Type npm install –save <module-name> then press Enter.
 3.	Run the JavaScript files with node <filename> on your terminal or command line to see example output.
