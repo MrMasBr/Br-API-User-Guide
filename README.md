@@ -6,7 +6,7 @@
 ## System Overview
 >This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
 ## React Axios
->Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes HTTP requisitions to the Swagger Petstore sample API using Axios.
+>Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes `HTTP requisitions` to the Swagger Petstore sample API using Axios.
 ## Characteristics
 - Using ‘Ajax’ as a layer bellow, makes requisitions through the browser via XMLHttpRequests;
 -	Makes HTTP requisition with Node.js;
@@ -15,21 +15,22 @@
 -	It supports cross-site forgery request known as XRSF.
 ## Prerequisites
 -	Noje.js running on your machine
+- React Axios
 ## Installation and configuration
 **Npm commands to install Node.js;**
-1.	Type npm nit on your terminal or cmd(command prompt) then press Enter.
-2.	Type npm install –save <module-name> then press Enter.
-3.	Run the JavaScript files with node <filename> on your terminal or command line to see example output.
+1.	Type `npm nit` on your terminal or cmd(command prompt) then press Enter.
+2.	Type `npm install –save <module-name>` on your terminal or cmd(command prompt) then press Enter.
+3.	Run the JavaScript files with `node <filename.js>` on your terminal or cmd(command prompt) then press Enter.
 
 >We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
-The installation of this package is very simple, just use the code bellow on your terminal.
+The installation of this package is very simple, just use the **code bellow** on your terminal.
 **PRINT DA IMAGEM**
 
 >After installation is completed, you already can use Axios on your project, we are going to create an application that consumes the Swagger Petstore sample API, and displays pet information data on the screen.
 
 
 ## Creating the file
->To better organize your project, create a file <nameexample.js>, which will be responsible for all the configuration and the Axios library import.
+>To better organize your project, create a file `<filename.js>`, which will be responsible for all the configuration and the Axios library import.
 The page structure should look like this.
  
 **Image. Page’s structure.**
