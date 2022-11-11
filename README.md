@@ -16,14 +16,13 @@
 ## React Axios
 >Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes `HTTP requisitions` to the Swagger Petstore sample API using Axios.
 ## Characteristics
-- Using ‘Ajax’ as a layer bellow, makes requisitions through the browser via XMLHttpRequests;
--	Makes HTTP requisition with Node.js;
+-	Making HTTP requisition with `Node.js`;
 -	Supports Promises;
--	Every answer will be transformed and returned in JSON;
--	It supports cross-site forgery request known as XRSF.
+-	Every answer will be transformed and returned in `JSON`;
+-	It supports `cross-site forgery` request known as `XRSF`.
 ## Prerequisites
--	Noje.js running on your machine
-- React Axios
+-	`Noje.js` running on your machine
+- React `Axios`
 ## Installation and configuration
 **Npm commands to install Node.js;**
 1.	Type `npm nit` on your terminal or cmd(command prompt) then press Enter.
