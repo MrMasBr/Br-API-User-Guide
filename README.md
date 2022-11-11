@@ -1,23 +1,16 @@
 # Br Petshop API User Guide
+>**Br Petshop** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
+>This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
 
-# Index 
-
-* [Index](#index)
-* [Introduction](#introduction)
 * [System-Overview](#system-overview)
 * [React Axios](#react-axios)
 * [Characteristics](#characteristics)
 * [Prerequisites](#prerequisites)
 * [Installation and configuration](#installation-and-configuration)
 * [Code explanation](#code-explanation)
-* [Requisitions](#requisitions)
+* [API endpoints](#api-endpoints)
 * [Conclusion](#conclusion)
 
-
-
-## Introduction
->**Br Petshop** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
->This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
 ## System Overview
 >This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
 ## React Axios
@@ -70,9 +63,9 @@ We pass it with the endpoint,that is, the URL with the path that will be request
 
  `Line6` <sub>Getting the JSON data with 'res.data'</sub>
 
- `Line8` <sub>'slicing up' my Array to get only 10 available pet</sub>
+ `Line8` <sub>'Slicing up' my Array to get only 10 available pet</sub>
 
- `Line11` <sub>printing out the Dog Id and Dog Name</sub>
+ `Line11` <sub>Printing out the Dog Id and Dog Name</sub>
 
  `Line15` <sub>In case of any error with the request, the catch()method will be responsible for handling and displaying the error.</sub>
 
@@ -109,4 +102,4 @@ We pass it with the endpoint,that is, the URL with the path that will be request
 </table>
 
 ## Conclusion
-Axios is a library that allows integration from your React project to any available API.
+Our API is using Axios,which is a library that allows integration from our project to the Swagger PetStore.
