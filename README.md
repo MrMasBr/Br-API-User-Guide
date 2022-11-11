@@ -23,8 +23,11 @@
 3.	Run the JavaScript files with `node <filename.js>` on your terminal or cmd(command prompt) then press Enter.
 
 >We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
-The installation of this package is very simple, just use the **code bellow** on your terminal.
-**PRINT DA IMAGEM**
+The installation of this package is very simple, just type the **command bellow** on your terminal.
+
+![npm install axios](https://user-images.githubusercontent.com/45776133/201379999-7e0ddf36-e853-49a8-ab53-0747434567b5.jpg)
+
+**Package installation.**
 
 >After installation is completed, you already can use Axios on your project, we are going to create an application that consumes the Swagger Petstore sample API, and displays pet information data on the screen.
 
