@@ -1,5 +1,20 @@
 # Br Petshop API User Guide
 
+# Index 
+
+* [Index](#index)
+* [Introduction](#introduction)
+* [System-Overview](#system-overview)
+* [React Axios](#react-axios)
+* [Characteristics](#characteristics)
+* [Prerequisites](#prerequisites)
+* [Installation and configuration](#installation-and-configuration)
+* [Code explanation](#code-explanation)
+* [Requisitions](#requisitions)
+* [Conclusion](#conclusion)
+
+
+
 ## Introduction
 >**Br Petshop** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
 >This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
@@ -35,37 +50,63 @@ The installation of this package is very simple, just type the **command bellow*
 ## Creating the file
 >To better organize your project, create a file `<filename.js>`, which will be responsible for all the configuration and the Axios library import.
 The page structure should look like this.
+
  
-**Image. Page’s structure.**
+ ![image structure](https://user-images.githubusercontent.com/45776133/201383856-727fb071-b86c-42ba-8f9e-e2aa2fa9856b.JPG)
 
+**Page’s structure.**
 
-## Get requisiton
->With this example, we are going to make a requisition using HTTP GET through the get() method. 
-<Line 9> is returning the Pet id and Pet name data from Swagger Petstore.
+## Code explanation ##
+ ![code explanation](https://user-images.githubusercontent.com/45776133/201384930-91681362-54b6-4d5d-a0e7-15a92db96545.JPG)
+
  
-**Code 5. Requisiton call.
-## Code explanation:
-**PRINT**
+ `Line1` <sub>Requering the 'Axios library</sub>
+ 
+`Line3` <sub>Using the get()method, to receive data, in this case, data from the Swagger Petstore API.
+We pass it with the endpoint,that is, the URL with the path that will be requested withi the API.
+//This path will be combined with the URL base that we defined earlier. At the end the request will be sent to https://petstore.swagger.io/v2/pet/findByStatus?status=available.</sub>
 
->Code execution.
+ `Line5` <sub>Using 'then' method to get the result and using 'res' variable to get the response</sub>
+
+ `Line6` <sub>Getting the JSON data with 'res.data'</sub>
+
+ `Line8` <sub>'slicing up' my Array to get only 10 available pet</sub>
+
+ `Line11` <sub>printing out the Dog Id and Dog Name</sub>
+
+ `Line15` <sub>In case of any error with the request, the catch()method will be responsible for handling and displaying the error.</sub>
+
  
 
-**(PRINT execucao do codigo)**
+**Data displayed**
 
-## Requisition with POST
->The post() method makes requisition utilizing HTTP POST, as per Code6.
-**(print)
-Code 5. Requisition with post**
-Here you can see on the third line, beyond the endpoint the second parameter is being passed to the post() method, which is an data object that are being sent to the API.
-The difference between the get() method and post() method is;
-The parameters will be sent through the HTTP request header, and in post() the parameters are sent through the body request.
-The most common methods for HTTP request are: GET, POST, DELETE and PUT. For each method Axios has its own ‘method’ with the same name, as we see in code 7.
-**(print)**
+ ![result](https://user-images.githubusercontent.com/45776133/201396640-e9029e04-3aed-4662-9132-1181aa87d160.JPG)
 
+## API endpoints
 
-Code 5. Requisition examples.
-
+<table>
+ <table border="1">
+   <thead>
+   <tr>
+       <th>Method 1</th>
+       <th>Description 2</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr>
+       <td>Get /pet/{petId}</td>
+       <td>Method used to return the information of available pets.</td>
+   </tr>
+   <tr>
+       <td>POST /pet</td>
+       <td>Method used to create a new register, in this case, a new pet.</td>
+   </tr>
+   </tbody>
+   <tfoot>
+       <td>DELETE /pet</td>
+       <td>Method used to remove a selected pet from the system.</td>
+   </tfoot>
+</table>
 
 ## Conclusion
-
-
+Axios is a library that allows integration from your React project to any available API.
