@@ -1,6 +1,6 @@
 # Br Petshop API User Guide
->**Br Petshop** is an API that simulates a pet shop management server. The API allows you to access Petstore data using a set on individual calls.
->This User guide describes step by step how to use the <nomedaminhaapi> API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
+>**Br Petshop** is an API that simulates a Pet shop management server. The API allows you to access Petstore data using a set on individual calls.
+>This User guide describes step by step how to use the Br API. The purpose of this API is to exchange data between your system and the Swagger Petstore, most of the time these data exchanges have the objective to automate manual process and/or allow the creation of new functionalities.
 
 * [System-Overview](#system-overview)
 * [React Axios](#react-axios)
@@ -15,9 +15,9 @@
 >This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
 
 ## React Axios
->Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes `HTTP requisitions` to the Swagger Petstore sample API using Axios.
+>Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes `HTTP requests` to the Swagger Petstore sample API using Axios.
 ## Characteristics
--	Making HTTP requisition with `Node.js`;
+-	Making HTTP request with `Node.js`;
 -	Supports Promises;
 -	Every answer will be transformed and returned in `JSON`;
 -	It supports `cross-site forgery` request known as `XRSF`.
@@ -82,19 +82,19 @@ The page structure should look like this.
  ![code explanation](https://user-images.githubusercontent.com/45776133/201384930-91681362-54b6-4d5d-a0e7-15a92db96545.JPG)
 
  
- `Line1` <sub>Requering the 'Axios library</sub>
+ `Line1` <sub>Requering the 'Axios library.</sub>
  
 `Line3` <sub>Using the get()method, to receive data, in this case, data from the Swagger Petstore API.
         We pass it with the endpoint,that is, the URL with the path that will be requested withi the API.
         //This path will be combined with the URL base that we defined earlier. At the end the request will be sent to       https://petstore.swagger.io/v2/pet/findByStatus?status=available.</sub>
 
- `Line5` <sub>Using 'then' method to get the result and using 'res' variable to get the response</sub>
+ `Line5` <sub>Using 'then' method to get the result and using 'res' variable to get the response.</sub>
 
- `Line6` <sub>Getting the JSON data with 'res.data'</sub>
+ `Line6` <sub>Getting the JSON data with 'res.data'.</sub>
 
- `Line8` <sub>'Slicing up' my Array to get only 10 available pet</sub>
+ `Line8` <sub>'Slicing up' my Array to get only 10 available pet.</sub>
 
- `Line11` <sub>Printing out the Dog Id and Dog Name</sub>
+ `Line11` <sub>Printing out the Dog Id and Dog Name.</sub>
 
  `Line15` <sub>In case of any error with the request, the catch()method will be responsible for handling and displaying the error.</sub>
 
