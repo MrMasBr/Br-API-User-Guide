@@ -13,6 +13,7 @@
 
 ## System Overview
 >This API User Guide contains a React project that makes HTTP requests to the Swagger Petstore API, which is a Promise-based HTTP client for making request.
+
 ## React Axios
 >Axios is a Promise based HTTP client for making requests. Can ben both in the browser and in Node.js or any API service. On this API User guide, we are going to create a React project that makes `HTTP requisitions` to the Swagger Petstore sample API using Axios.
 ## Characteristics
@@ -21,13 +22,14 @@
 -	Every answer will be transformed and returned in `JSON`;
 -	It supports `cross-site forgery` request known as `XRSF`.
 ## Prerequisites
--	`Noje.js` running on your machine
-- React `Axios`
+-	Intermediate knowledge of `HTTP protocol`.
+- Basic knowledge of a programming language e.g`(JavaScript/Java/PHP/Python/Node or similar)`.
+
 ## Installation and configuration
-**Npm commands to install Node.js;**
+**Npm commands to install**
 1.	Type `npm nit` on your terminal or cmd(command prompt) then press Enter.
 2.	Type `npm install –save <module-name>` on your terminal or cmd(command prompt) then press Enter.
-3.	Run the JavaScript files with `node <filename.js>` on your terminal or cmd(command prompt) then press Enter.
+3.	Run the files with `programming_language <filename.js>` on your terminal or cmd(command prompt) then press Enter.
 
 >We need to access it and install the Axios package to integrate the HTTP requisitions and to consume the external API.
 The installation of this package is very simple, just type the **command bellow** on your terminal.
@@ -48,31 +50,6 @@ The page structure should look like this.
 
 **Page’s structure.**
 
-## Code explanation ##
- ![code explanation](https://user-images.githubusercontent.com/45776133/201384930-91681362-54b6-4d5d-a0e7-15a92db96545.JPG)
-
- 
- `Line1` <sub>Requering the 'Axios library</sub>
- 
-`Line3` <sub>Using the get()method, to receive data, in this case, data from the Swagger Petstore API.
-We pass it with the endpoint,that is, the URL with the path that will be requested withi the API.
-//This path will be combined with the URL base that we defined earlier. At the end the request will be sent to https://petstore.swagger.io/v2/pet/findByStatus?status=available.</sub>
-
- `Line5` <sub>Using 'then' method to get the result and using 'res' variable to get the response</sub>
-
- `Line6` <sub>Getting the JSON data with 'res.data'</sub>
-
- `Line8` <sub>'Slicing up' my Array to get only 10 available pet</sub>
-
- `Line11` <sub>Printing out the Dog Id and Dog Name</sub>
-
- `Line15` <sub>In case of any error with the request, the catch()method will be responsible for handling and displaying the error.</sub>
-
- 
-
-**Data displayed**
-
- ![result](https://user-images.githubusercontent.com/45776133/201396640-e9029e04-3aed-4662-9132-1181aa87d160.JPG)
 
 ## API endpoints
 
@@ -100,5 +77,34 @@ We pass it with the endpoint,that is, the URL with the path that will be request
    </tfoot>
 </table>
 
+
+## Code explanation ##
+ ![code explanation](https://user-images.githubusercontent.com/45776133/201384930-91681362-54b6-4d5d-a0e7-15a92db96545.JPG)
+
+ 
+ `Line1` <sub>Requering the 'Axios library</sub>
+ 
+`Line3` <sub>Using the get()method, to receive data, in this case, data from the Swagger Petstore API.
+        We pass it with the endpoint,that is, the URL with the path that will be requested withi the API.
+        //This path will be combined with the URL base that we defined earlier. At the end the request will be sent to       https://petstore.swagger.io/v2/pet/findByStatus?status=available.</sub>
+
+ `Line5` <sub>Using 'then' method to get the result and using 'res' variable to get the response</sub>
+
+ `Line6` <sub>Getting the JSON data with 'res.data'</sub>
+
+ `Line8` <sub>'Slicing up' my Array to get only 10 available pet</sub>
+
+ `Line11` <sub>Printing out the Dog Id and Dog Name</sub>
+
+ `Line15` <sub>In case of any error with the request, the catch()method will be responsible for handling and displaying the error.</sub>
+
+ 
+
+**Data displayed**
+
+ ![result](https://user-images.githubusercontent.com/45776133/201396640-e9029e04-3aed-4662-9132-1181aa87d160.JPG)
+
+
 ## Conclusion
-Our API is using Axios,which is a library that allows integration from our project to the Swagger PetStore.
+Given the API concept and examples presented, we can see how useful it can be for our application to make use of an API integration.
+In general, this API is proving a lot of well services to enrich our application and allow our system to talk to Swagger PetStore, using a shared information assimilation pattern.
